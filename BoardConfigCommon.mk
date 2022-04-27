@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 include vendor/amlogic/gx-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/amlogic/gx-common
