@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey
 
+## Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.0.vendor
+
 ## File-system permissions
 PRODUCT_PACKAGES += \
     fs_config_dirs \
@@ -68,21 +72,25 @@ PRODUCT_PACKAGES += \
 
 ## Graphics
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.2-service \
     android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.composer@2.2-impl \
-    android.hardware.graphics.mapper@2.0-impl-2.1
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    gralloc.amlogic \
+    libamgralloc_ext \
 
 ## Hardware Compsoer
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    hwcomposer.amlogic \
     libhwc2on1adapter \
     libhwc2onfbadapter
 
 ## HDMI CEC
 PRODUCT_PACKAGES += \
     android.hardware.tv.cec@1.0-impl \
-    android.hardware.tv.cec@1.0-service
+    android.hardware.tv.cec@1.0-service \
+    vendor.amlogic.hardware.hdmicec@1.0 \
+    vendor.amlogic.hardware.hdmicec@1.0.vendor
 
 ## Health
 PRODUCT_PACKAGES += \
@@ -181,9 +189,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat
 
+## Remotecontrol
+PRODUCT_PACKAGES += \
+    vendor.amlogic.hardware.remotecontrol@1.0 \
+    vendor.amlogic.hardware.remotecontrol@1.0.vendor
+
 ## Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+## Systemcontrol
+PRODUCT_PACKAGES += \
+    systemcontrol \
+    vendor.amlogic.hardware.systemcontrol@1.1 \
+    vendor.amlogic.hardware.droidvold@1.0.vendor \
+    vendor.amlogic.hardware.tvserver@1.0.vendor \
+    vendor.amlogic.display.meson_display_ipc@1.0.vendor
 
 ## Thermal
 PRODUCT_PACKAGES += \

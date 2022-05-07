@@ -10,7 +10,6 @@ vendor/bin/hw/android.hardware.dumpstate@1.0-service.droidlogic
 vendor/bin/hw/android.hardware.health@2.0-service.override
 vendor/bin/rtkcmd
 vendor/bin/secmem_test
-vendor/bin/systemcontrol
 vendor/bin/tee_preload_fw
 vendor/bin/tee-supplicant
 vendor/etc/bluetooth/auto_pairing.conf
@@ -26,7 +25,6 @@ vendor/etc/firmware/firmware.le
 vendor/etc/init/android.hardware.dumpstate@1.0-service.droidlogic.rc
 vendor/etc/init/droidvold.rc
 vendor/etc/init/hdmicecd.rc
-vendor/etc/init/systemcontrol.rc
 vendor/etc/init/tee-supplicant.rc
 vendor/etc/lowmemorykiller_2G.txt
 vendor/etc/lowmemorykiller_512M.txt
@@ -103,9 +101,7 @@ vendor/lib/firmware/video/h264_enc.bin
 vendor/lib/firmware/video/video_ucode.bin
 vendor/lib/hw/audio.primary.amlogic.so
 vendor/lib/hw/gatekeeper.amlogic.so
-vendor/lib/hw/gralloc.amlogic.so
 vendor/lib/hw/hdmi_cec.amlogic.so
-vendor/lib/hw/hwcomposer.amlogic.so
 vendor/lib/hw/keystore.amlogic.so
 vendor/lib/hw/memtrack.amlogic.so
 vendor/lib/hw/power.amlogic.so
@@ -114,7 +110,6 @@ vendor/lib/hw/thermal.amlogic.so
 vendor/lib/libamaudioutils.so
 vendor/lib/libamavutils_alsa.so
 vendor/lib/libamavutils.so
-vendor/lib/libamgralloc_ext.so
 vendor/lib/libamlaudiorc.so
 vendor/lib/libdatachunkqueue_alt.so
 vendor/lib/libdisplaysetting.so
@@ -140,12 +135,10 @@ vendor/lib/libOmxVideo.so
 vendor/lib/libomx_worker_peer_alt.so
 vendor/lib/liboptimization.so
 vendor/lib/libplayready.so
-vendor/lib/libpqcontrol.so
 vendor/lib/libremotecontrol_jni.so
 vendor/lib/libremotecontrolserver.so
 vendor/lib/libsecmem.so
 vendor/lib/libstagefrighthw.so
-vendor/lib/libsystemcontrolservice.so
 vendor/lib/libteec.so
 vendor/lib/libtee_load_video_fw.so
 vendor/lib/libthreadworker_alt.so
@@ -153,10 +146,6 @@ vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib/libwifi-hal-common-ext.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libplayreadymediadrmplugin.so
-vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so
-vendor/lib/vendor.amlogic.hardware.hdmicec@1.0.so
-vendor/lib/vendor.amlogic.hardware.remotecontrol@1.0.so
-vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so
 vendor/package_config/config
 vendor/priv-app/droidlogic-res/droidlogic-res.apk
 vendor/priv-app/droidlogic-res/lib/arm/libremotecontrol_jni.so

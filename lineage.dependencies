@@ -4,6 +4,18 @@
     "target_path": "kernel/amlogic/linux-4.9"
   },
   {
+    "repository": "android_hardware_amlogic_gralloc",
+    "target_path": "hardware/amlogic/gralloc"
+  },
+  {
+    "repository": "android_hardware_amlogic_hwcomposer",
+    "target_path": "hardware/amlogic/hwcomposer"
+  },
+  {
+    "repository": "android_hardware_amlogic_interfaces",
+    "target_path": "hardware/amlogic/interfaces"
+  },
+  {
     "repository": "android_hardware_amlogic_kernel-modules_mali-driver",
     "target_path": "hardware/amlogic/kernel-modules/mali-driver"
   },
@@ -26,5 +38,9 @@
   {
     "repository": "android_hardware_amlogic_tools_respacker",
     "target_path": "hardware/amlogic/tools/respacker"
+  },
+  {
+    "repository": "android_vendor_amlogic_common_frameworks",
+    "target_path": "vendor/amlogic/common/frameworks"
   }
 ]
