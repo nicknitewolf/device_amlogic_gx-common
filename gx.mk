@@ -109,7 +109,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     mali \
     media \
-    optee-module
+    optee-module-p
 
 ## Keymaster
 PRODUCT_PACKAGES += \
